@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css'
+import { Link } from 'react-router-dom';
 const App = () => {
 
   const handleSubmit = (e) => {
@@ -31,6 +32,7 @@ const App = () => {
 
     <div>
       <h1>Simple CRUD</h1>
+      <Link to='/users'>Go To Users</Link>
       <form onSubmit={handleSubmit} className='border p-8 mt-10'>
         <div className="mb-6">
           <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
